@@ -1,0 +1,111 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #22b573;
+}
+
+.header {
+  h1 {
+    font-weight: 200;
+  }
+  color: white;
+  letter-spacing: 8px;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.menuBtn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.contentBox {
+  display: flex;
+  justify-content: center;
+}
+
+.boxItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  width: 20vw;
+
+  h3,
+  a {
+    text-decoration: none;
+    color: #cd9841;
+  }
+  a {
+    font-weight: 700;
+    margin-top: 5px;
+  }
+}
+
+.itemOne,
+.itemThree {
+  min-height: 400px;
+  max-height: auto;
+  background-color: black;
+  p {
+    color: white;
+    font-weight: 300;
+  }
+  padding: 5px 25px;
+}
+
+.itemTwo {
+  min-height: 400px;
+  max-height: auto;
+  background-color: white;
+  padding: 5px 25px;
+}
+
+.playBtn {
+  margin-top: 120px;
+  color: white;
+}
+
+.itemThree {
+  position: relative;
+  text-align: center;
+  h3 {
+    position: relative;
+    font-weight: 400;
+    bottom: -60px;
+    left: -60px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .contentBox {
+    flex-direction: column;
+  }
+  .boxItem {
+    width: auto;
+  }
+
+  .header {
+    margin-left: 25px;
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    letter-spacing: 2px;
+    margin: 35px;
+    font-size: 0.6rem;
+  }
+  .playBtn {
+    margin-top: 120px;
+    color: white;
+  }
+}
